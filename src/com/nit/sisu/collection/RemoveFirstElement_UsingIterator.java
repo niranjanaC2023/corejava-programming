@@ -1,0 +1,22 @@
+package com.nit.sisu.collection;
+import java.util.ArrayList;
+import java.util.Iterator;
+public class RemoveFirstElement_UsingIterator
+{
+	public static void main(String[] args)
+	{
+		ArrayList<Object> al = new ArrayList<>();
+		{
+			al.add("hi");
+			al.add(7);
+			al.add('h');
+			al.add(9.4);
+			System.out.println(al);
+			//remove first element using iterator concept
+			Iterator<Object> itr = al.iterator();
+				itr.next();
+				itr.remove();
+			System.out.println(al);  
+		}
+	}
+}
