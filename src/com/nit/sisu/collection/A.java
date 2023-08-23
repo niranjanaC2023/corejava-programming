@@ -1,4 +1,4 @@
-package com.nit.sisu.collection;
+	package com.nit.sisu.collection;
 
 public class A implements Comparable<A>{
 	private int x;

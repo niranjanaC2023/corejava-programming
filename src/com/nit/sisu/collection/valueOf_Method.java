@@ -1,4 +1,4 @@
-package com.nit.sisu.collection;
+	package com.nit.sisu.collection;
 public class valueOf_Method
 {
 	public static void main(String[] args)

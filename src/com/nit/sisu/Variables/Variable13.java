@@ -21,7 +21,7 @@ class Variable13
 	public static void main(String[] args) 
 	{
 		m1(10);
-		m1(20);
+//		m1(20);
 
 	}
 	

@@ -45,10 +45,10 @@ class Const_chaining
 		new SubClass();
 
 		System.out.println();
-		new SubClass(10);
+		//new SubClass(10);
 
 		System.out.println();
-		new SubClass("abc");
+		//new SubClass("abc");
 
 	}
 }

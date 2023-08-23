@@ -12,10 +12,10 @@ public class Project1_LinkedHashMap {
 		System.out.println(lhm);
 		System.out.println();		
 		//proof: null raised inside sopln becoz Key, Value not there
-	    	System.out.println(lhm.put(9, 1 ));
-			System.out.println(lhm.size()); //2
-			System.out.println(lhm);
-			System.out.println();
+    	System.out.println(lhm.put(9, 1 ));
+		System.out.println(lhm.size()); //2
+		System.out.println(lhm);
+		System.out.println();
 		//proof: it stored data as hashCode order not insertion order, not sorting order
 		lhm.put(6,  2);
 		lhm.put("c", 3);

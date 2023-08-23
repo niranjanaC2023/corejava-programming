@@ -2,8 +2,10 @@ package com.nit.sisu.collection;
 
 import java.util.Stack;
 
-public class Project_Stack {
-		public static void main(String[] args) {
+public class Project_Stack 
+{
+		public static void main(String[] args) 
+		{
 				Stack<String> s = new Stack<>();
 				System.out.println(s);
 				s.push("a");
@@ -25,9 +27,11 @@ public class Project_Stack {
 				System.out.println(s.peek()); //retrieve, return...no remove...So Same object will be came..
 				System.out.println(s);
 				System.out.println();
+				
 				//searching element
 				System.out.println(s.search("a")); //search method , serach the element from the top of the stack with starting index 1
 				System.out.println();
+				
 				//we can't call pop and peek, if stack is empty..else RE:- EmptyStackException
 				//proof:- Empty the stack then check
 				System.out.println(s.pop());
@@ -37,7 +41,8 @@ public class Project_Stack {
 				//System.out.println(s.pop()); //RE:-ESE
 				//System.out.println(s.peek());  //RE:- ESE
 				System.out.println();
-// check stack is empty or not
+				
+				// check stack is empty or not
 				Stack<Object> s1 = new Stack<>();
 				s1.add(10);
 				s1.add(20);
@@ -49,7 +54,5 @@ public class Project_Stack {
 				System.out.println(s1.get(3));
 				System.out.println(s1);
 				
-				
-				
-}
+		}
 }
