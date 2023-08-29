@@ -1,7 +1,6 @@
 package com.nt.sisu.Java8Features;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 public class UseOf_ToArraymethod {
 
@@ -11,6 +10,7 @@ public class UseOf_ToArraymethod {
 		
 		Object arr[] = list.stream().toArray();
 		System.out.println(arr.length);
+		System.out.println();
 		
 		for(Object obj : arr)
 		{

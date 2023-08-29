@@ -34,6 +34,7 @@ public class Question3
 		//3rd way
 		Set<Integer> set = new HashSet();
 		list.stream().filter(n -> !set.add(n)).forEach(System.out::println);
+		
 
 	}
 

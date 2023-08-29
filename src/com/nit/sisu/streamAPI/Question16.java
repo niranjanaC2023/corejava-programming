@@ -1,5 +1,5 @@
 /*
- * Write a Program to find the Maximum element in an array?
+ * Write a Program to find the numbers greater than 5 in an array?
  */
 
 

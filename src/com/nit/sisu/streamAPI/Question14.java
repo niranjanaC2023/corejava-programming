@@ -1,5 +1,5 @@
 /*
- * How to find only duplicate elements with its count from the String ArrayList in Java8?
+ * How to find only duplicate elements and unique elements with its count from the String ArrayList in Java8?
  */
 
 
@@ -28,6 +28,23 @@ public class Question14
 		Map<String, Long> map = myList.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		System.out.println("map: "+map);
 		System.out.println();
+		
+		//3rd way(find the duplicate elements are in given String)
+		String name = "Niranjana";
+		String[] data = name.split("");
+		System.out.println(Arrays.toString(data));
+		List<String> duplicatesAre = Arrays.stream(data).collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).
+				                         entrySet().stream().filter(x->x.getValue()>1).map(Map.Entry::getKey).collect(Collectors.toList());
+		System.out.println("duplicatesAre: "+duplicatesAre);
+		System.out.println();
+		
+		//(find the unique elements are in given String)
+		String name2 = "Niranjana";
+		String[] data2 = name.split("");
+		System.out.println(Arrays.toString(data2));
+		List<String> uniquesAre = Arrays.stream(data).collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).
+				                         entrySet().stream().filter(x->x.getValue()==1).map(Map.Entry::getKey).collect(Collectors.toList());
+		System.out.println("uniquesAre: "+uniquesAre);
 		
 	}
 }

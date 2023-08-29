@@ -19,10 +19,10 @@ public class UseOf_Min_MaxMethod {
 		
 		List<Integer> num2 = List.of(4,9,3,12,19);
 		Optional<Integer> minNum2 = num2.stream().min((x,y)->
-																													{
-																														return x.compareTo(y);
-																													}
-																											);
+																	{
+																		return x.compareTo(y);
+																	}
+															);
 		System.out.println("Minimum2 number is:"+minNum2.get());
 		System.out.println();
 		

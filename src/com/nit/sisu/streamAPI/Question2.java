@@ -22,7 +22,7 @@ public class Question2
 		System.out.println();
 		
 		//2nd way
-		list.stream().map(s->s+"").filter(s->s.startsWith("1")).forEach(System.out::println); ////this forEach() method returns void
+		list.stream().map(s->s+"").filter(s->s.startsWith("1")).forEach(System.out::println); //// forEach() method returns void
 
 	}
 
